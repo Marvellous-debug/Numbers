@@ -1,0 +1,15 @@
+import math 
+print ("Calculations must be completed using radians, 1 or 2 pi") 
+while True: 
+    value = int(input("insert side A length"))
+    value2 = int(input("insert side B length"))
+    if value2 == value:
+        print("This is not a scalene triangle, try again")
+        break 
+    value3 = int(input("what would the angle of side c be?"))
+    if value3 != 2 or 1:
+        print('should be 1 or 2 pi, if not, is syntax error') 
+        break 
+    ans = ((value * value2 * math.sin(value3)) / 2)
+    print (ans) 
+    
