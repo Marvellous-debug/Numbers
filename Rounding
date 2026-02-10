@@ -1,0 +1,15 @@
+import math 
+
+
+t = float (input("Enter a number to be rounded: ")) 
+
+
+there = math.sqrt (t) ** 2
+
+
+value = abs(there - t) 
+
+
+print("Original value:", t)
+print("square of square root:", there) 
+print("rounding error:", value)
